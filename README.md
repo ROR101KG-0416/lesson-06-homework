@@ -1,5 +1,7 @@
 # Lesson 06 Homework
 
+The directions for this assignment can be found [here](https://github.com/ROR101KG-0416/homework-assignment-instructions/blob/master/lesson_06.md)
+
 ## Install Instructions
 
 1) Fork and Clone this repository according to the tutorial found [here](https://github.com/ROR101KG-0416/homework-assignment-instructions/blob/master/git_github_tutorial.pdf)
