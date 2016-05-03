@@ -353,3 +353,5 @@ ActionController::RoutingError (No route matches [GET] "/restaurants:0"):
   [1m[35m (0.5ms)[0m  commit transaction
   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "restaurants"[0m
   [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
