@@ -1,0 +1,14 @@
+<h1>Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+
+  <p>
+    <span><%= link_to restaurant.name, restaurant_path(restaurant) %></span>
+    <span><% restaurant.street %></span>
+    <span><% restaurant.city %></span>
+    <span><% restaurant.state %></span>
+    <span><% restaurant.country %></span>
+    <span><% restaurant.postal_code %></span>
+  </p>
+
+<% end %>
