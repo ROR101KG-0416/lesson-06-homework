@@ -7,7 +7,4 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.find_by_id(params[:id])
   end
 
-  def create
-    @restaurant = Restaurant.new
-  end
 end
