@@ -3,6 +3,6 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.all
   end
   def show
-    @restaurants = Restaurant.find_by_id(params[:id])
+    @restaurant = Restaurant.find_by_id(params[:id])
   end
 end

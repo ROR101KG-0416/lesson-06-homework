@@ -3006,3 +3006,19 @@ Processing by RestaurantsController#show as HTML
   Rendered restaurants/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.1ms)
   [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", 3]]
+
+
+Started GET "/restaurants" for ::1 at 2016-05-08 16:54:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 220ms (Views: 208.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-05-08 16:54:07 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 13.0ms | ActiveRecord: 0.2ms)
