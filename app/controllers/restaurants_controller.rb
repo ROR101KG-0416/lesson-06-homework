@@ -1,11 +1,9 @@
 class RestaurantsController < ActionController::Base
-  
   def index
-  	@restaurants = Restaurant.all
+    @restaurants = Restaurant.all
   end
 
   def show
   	@restaurant = Restaurant.find_by_id(params[:id])
   end
-
 end
