@@ -1,0 +1,16 @@
+<%= link_to 'return to restaurant list', restaurants_path %>
+
+<% if @restaurants %>
+
+  <h1><%= @restaurants.name %></h1>
+  <p><%= @restaurants.street %></p>
+  <p><%= @restaurants.city%></p>
+  <p><%= @restaurants.state%></p>
+  <p><%= @restaurants.country%></p>
+  <p><%= @restaurants.postal_code%></p>
+
+<% else %>
+
+  <p> Restaurant not found </p>
+
+<% end %>
