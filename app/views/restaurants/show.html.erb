@@ -1,0 +1,13 @@
+<% if @restaurant %>
+
+  <h1><%= @restaurant.name %></h1>
+  <p><%= @restaurant.street %></p>
+  <p><%= @restaurant.city %></p>
+  <p><%= @restaurant.state %></p>
+  <p><%= @restaurant.postal_code %></p>
+
+<% else %>
+
+  <p> restaurant not  found </p>
+
+<%end%>
